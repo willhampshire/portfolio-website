@@ -65,6 +65,10 @@ header {
   flex-direction: column;
 }
 
+.navbar-text {
+  @apply hover:text-gray-500 transition-colors duration-200 ease-in-out;
+}
+
 .image-project {
   @apply rounded-lg;
   background-color: white;
@@ -90,4 +94,8 @@ header {
 
 .p-about {
   @apply mb-6
+}
+
+.noscroll {
+  overflow: hidden;
 }

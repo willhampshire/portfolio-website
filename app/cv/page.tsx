@@ -1,14 +1,13 @@
 "use client";
 
-import { useState } from 'react';
+import {useEffect, useState} from 'react';
 import { Listbox, Transition } from '@headlessui/react';
 import { ChevronUpDownIcon } from '@heroicons/react/20/solid';
-import ProjectUnit from '../components/unit';
-import HyperLink from '../components/hyper';
 
 const options = [
-    { name: 'Physics', url: '/CV_WH_physics.pdf' },
-    { name: 'Data', url: '/CV_WH_data.pdf' }
+    { name: 'Data', url: '/CV_WH_data.pdf' },
+    { name: 'Physics', url: '/CV_WH_physics.pdf' }
+
 ];
 
 export default function CVPage() {
@@ -20,6 +19,16 @@ export default function CVPage() {
         link.download = `${selectedOption.url.slice(1)}`;
         link.click();
     };
+
+    useEffect(() => {
+        // Add the 'noscroll' class to the body
+        document.body.classList.add('noscroll');
+
+        // Cleanup function to remove the 'noscroll' class when the component is unmounted
+        return () => {
+            document.body.classList.remove('noscroll');
+        };
+    }, []);
 
     return (
         <div className="flex justify-center p-4">
@@ -83,11 +92,9 @@ export default function CVPage() {
                         </Listbox>
                     </div>
 
-                    <button
-                        onClick={handleDownload}
-                        className="bg-blue-500 hover:bg-blue-700 my-4 text-white font-bold py-2 px-4 rounded"
-                    >
-                        Download
+                    <button onClick={handleDownload} className="bg-blue-500 hover:bg-blue-700 my-4 text-white font-bold
+                    py-2 px-4 rounded">
+                        Download.
                     </button>
                 </div>
             </main>

@@ -34,6 +34,27 @@ export default function ProjectsPage() {
                     />
 
                     <ProjectUnit
+                        title="This Website - Lightweight, Responsive Website Design using Modern Frameworks"
+                        imageSrc="/ts.png"
+                        classNameImage={"image-project"}
+                        description={
+                            <>
+                                After realising my Wordpress site was very bloated and takes a long time to load basic
+                                pages, I created my own, using{' '}
+                                <span className="inline-code">Next.js</span>,{' '}
+                                <span className="inline-code">Tailwind CSS</span>{' '}and{' '}
+                                <span className="inline-code">Headless UI</span>.
+                                Using CSS to implement a moving gradient background is one of the customisations that
+                                building from scratch allows, as well as the internal page navigation system using
+                                react not requiring page refresh.
+                                More details on{' '}
+                                <HyperLink href={"https://github.com/willhampshire/portfolio-website"}
+                                           external={true} text={"GitHub"}/>.
+                            </>
+                        }
+                    />
+
+                    <ProjectUnit
                         title="WPF App (.NET) for Calculation of Radiance-Temperature Relationship for Digital
                         Radiometric Optical Devices"
                         imageSrc="/base-image-radtemp.png"

@@ -1,8 +1,20 @@
+"use client";
+
+import { useEffect } from 'react';
 import Image from 'next/image';
-import Link from 'next/link';
 
 export default function AboutPage() {
     const profilePic = '/profile.png';
+
+    useEffect(() => {
+        // Add the 'noscroll' class to the body
+        document.body.classList.add('noscroll');
+
+        // Cleanup function to remove the 'noscroll' class when the component is unmounted
+        return () => {
+            document.body.classList.remove('noscroll');
+        };
+    }, []);
 
     return (
         <main className="flex flex-col items-center justify-center p-4 main-homepage">

@@ -31,8 +31,7 @@ const Hyperlink: React.FC<HyperlinkProps> = ({ href, text, className,
     } else
     {
         return (
-            <Link href={href}>
-                <a className={`hyper ${className}`}>{text}</a>
+            <Link href={href} className={`hyper ${className}`}>{text}
             </Link>
         );
     };
