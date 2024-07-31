@@ -2,6 +2,28 @@
 @tailwind components;
 @tailwind utilities;
 
+@import 'gradient.css';
+
+.dmserif {
+  @apply text-4xl font-bold;
+  font-family: 'DM Serif Display', serif;
+}
+
+h2 {
+  @apply dmserif;
+  @apply text-4xl font-bold mb-2;
+}
+
+h3 {
+  @apply text-4xl font-bold mb-2;
+}
+
+h1 {
+  @apply dmserif;
+  @apply text-5xl font-bold mb-4;
+}
+
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -30,4 +52,42 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+
+header {
+  @apply flex justify-between items-center p-4 bg-opacity-50 backdrop-blur-md
+}
+
+.main-homepage {
+  height: calc(100vh - 5rem);
+  display: flex;
+  flex-direction: column;
+}
+
+.image-project {
+  @apply rounded-lg;
+  background-color: white;
+  width: 16vw;
+  max-height: 16vw;
+  height: auto;
+  object-fit: cover; /* Crop the image to fill the container */
+  object-position: center; /* Center the image in the frame */
+  overflow: hidden; /* Hide any overflow content */
+}
+
+.hyper {
+  @apply text-blue-400 hover:underline
+}
+
+.inline-code {
+  font-family: monospace;
+  background-color: #f5f5f5;
+  padding: 0.2em 0.4em;
+  border-radius: 4px;
+  color: #333;
+}
+
+.p-about {
+  @apply mb-6
 }
