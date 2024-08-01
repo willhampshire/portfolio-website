@@ -34,7 +34,7 @@ export default function CVPage() {
         <div className="flex justify-center p-4">
             <main className="w-full max-w-4xl bg-black bg-opacity-40 backdrop-blur-2xl p-6 rounded-lg shadow-lg">
                 <div className="rounded-3xl p-4 md:p-16">
-                    <h1 className="text-5xl font-bold mb-6">Download my CV.</h1>
+                    <h1 className="text-4xl md:text-5xl font-bold mb-6">Download my CV.</h1>
                     <p className="mb-6 text-gray-300">Please select CV.</p>
 
                     <div className="w-36 mb-4">
@@ -92,7 +92,7 @@ export default function CVPage() {
                         </Listbox>
                     </div>
 
-                    <button onClick={handleDownload} className="bg-blue-500 hover:bg-blue-700 my-4 text-white font-bold
+                    <button onClick={handleDownload} className="text-sm md:text-lg bg-blue-500 hover:bg-blue-700 my-4 text-white font-bold
                     py-2 px-4 rounded">
                         Download.
                     </button>

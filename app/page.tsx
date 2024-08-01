@@ -36,16 +36,16 @@ export default function HomePage() {
     }, []);
 
     return (
-        <main className="flex flex-col items-center justify-center p-4 main-homepage">
+        <main className="homepage">
             <div className="flex my-auto flex-col md:flex-row items-center md:items-center justify-between w-full max-w-4xl">
                 <div className="text-left mr-auto md:mr-8 md:w-2/3 ml-4 my-8">
-                    <p className="text-lg mb-2">{"Hi, I'm"}</p>
-                    <h2 className="text-5xl mb-4">William Hampshire.</h2>
-                    <p className="text-xl mb-12">Physicist. Specialised in data science & coding.</p>
+                    <p className="text-md md:text-lg mb-2">{"Hi, I'm"}</p>
+                    <h2 className="text-4xl md:text-5xl mb-4">William Hampshire.</h2>
+                    <p className="text-md md:text-xl mb-12">Physicist. Specialised in data science & coding.</p>
 
                     <Link href="/projects" passHref>
                         <button
-                            className="px-6 py-3 bg-blue-500 text-white font-semibold rounded-lg shadow-lg
+                            className="text-md md:text-lg px-6 py-3 bg-blue-500 text-white font-semibold rounded-lg shadow-lg
               hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-black focus:ring-opacity-50">
                             See Projects.
                         </button>
