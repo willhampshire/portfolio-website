@@ -33,11 +33,11 @@ export default function CVPage() {
     return (
         <div className="flex justify-center p-4">
             <main className="w-full max-w-4xl bg-black bg-opacity-40 backdrop-blur-2xl p-6 rounded-lg shadow-lg">
-                <div className="rounded-3xl p-16">
+                <div className="rounded-3xl p-4 md:p-16">
                     <h1 className="text-5xl font-bold mb-6">Download my CV.</h1>
                     <p className="mb-6 text-gray-300">Please select CV.</p>
 
-                    <div className="w-72 mb-4">
+                    <div className="w-36 mb-4">
                         <Listbox value={selectedOption} onChange={setSelectedOption}>
                             <div className="relative mt-1">
                                 <Listbox.Button className="relative w-full cursor-default rounded-lg bg-white text-black

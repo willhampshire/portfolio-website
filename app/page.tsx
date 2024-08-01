@@ -7,21 +7,39 @@ import Link from 'next/link';
 export default function HomePage() {
     const profilePic = '/profile.png';
 
-    useEffect(() => {
-        // Add the 'noscroll' class to the body
-        document.body.classList.add('noscroll');
 
-        // Cleanup function to remove the 'noscroll' class when the component is unmounted
+
+    useEffect(() => {
+        // Function to handle adding/removing 'noscroll' class
+        const handleResize = () => {
+            // Check if screen width is less than 768px (mobile)
+            if (window.matchMedia("(min-width: 768px)").matches) {
+                // Apply 'noscroll' class if in desktop mode
+                document.body.classList.add('noscroll');
+            } else {
+                // Remove 'noscroll' class if in mobile mode
+                document.body.classList.remove('noscroll');
+            }
+        };
+
+        // Add event listener for screen resize
+        window.addEventListener('resize', handleResize);
+
+        // Initial check
+        handleResize();
+
+        // Cleanup function
         return () => {
+            window.removeEventListener('resize', handleResize);
             document.body.classList.remove('noscroll');
         };
     }, []);
 
     return (
         <main className="flex flex-col items-center justify-center p-4 main-homepage">
-            <div className="flex flex-col md:flex-row items-center md:items-center justify-between w-full max-w-4xl">
-                <div className="text-left md:w-2/3 mr-8 ml-4 mb-8 md:mb-0">
-                    <p className="text-lg mb-2">Hi, I'm</p>
+            <div className="flex my-auto flex-col md:flex-row items-center md:items-center justify-between w-full max-w-4xl">
+                <div className="text-left mr-auto md:mr-8 md:w-2/3 ml-4 my-8">
+                    <p className="text-lg mb-2">{"Hi, I'm"}</p>
                     <h2 className="text-5xl mb-4">William Hampshire.</h2>
                     <p className="text-xl mb-12">Physicist. Specialised in data science & coding.</p>
 
@@ -34,7 +52,7 @@ export default function HomePage() {
                     </Link>
                 </div>
 
-                <div className="md:w-1/2 flex justify-center md:justify-end">
+                <div className="w-full md:w-1/2 m-4 p-4 flex items-center justify-start md:justify-end">
                     <Image
                         src={profilePic}
                         alt="Will Hampshire"

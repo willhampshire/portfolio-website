@@ -7,17 +7,35 @@ export default function AboutPage() {
     const profilePic = '/profile.png';
 
     useEffect(() => {
-        // Add the 'noscroll' class to the body
-        document.body.classList.add('noscroll');
+        // Function to handle adding/removing 'noscroll' class
+        const handleResize = () => {
+            document.body.classList.remove('noscroll');
+            // Check if screen width is less than 768px (mobile)
+            //if (window.matchMedia("(min-width: 768px)").matches) {
+                // Apply 'noscroll' class if in desktop mode
+                // document.body.classList.add('noscroll');
 
-        // Cleanup function to remove the 'noscroll' class when the component is unmounted
+            //} else {
+                // Remove 'noscroll' class if in mobile mode
+             //   document.body.classList.remove('noscroll');
+            //}
+        };
+
+        // Add event listener for screen resize
+        window.addEventListener('resize', handleResize);
+
+        // Initial check
+        handleResize();
+
+        // Cleanup function
         return () => {
+            window.removeEventListener('resize', handleResize);
             document.body.classList.remove('noscroll');
         };
     }, []);
 
     return (
-        <main className="flex flex-col items-center justify-center p-4 main-homepage">
+        <main className="flex flex-col md:items-center p-4">
             <div className="flex flex-col md:flex-row items-center md:items-center justify-between w-full max-w-4xl">
                 <div className="text-left md:w-10/12 mr-8 ml-4 md:mb-0">
                     <h1 className="text-5xl font-bold mb-6">
@@ -42,8 +60,7 @@ export default function AboutPage() {
                     </p>
 
                     <p className="p-about">
-                        When I'm not immersed in projects, I like to play Saxophone, enjoy playing squash & going to
-                        the gym.
+                        {"When I'm not immersed in projects, I like to play Saxophone, enjoy playing squash & going to the gym."}
                     </p>
 
                     <p className="p-about">
@@ -51,7 +68,7 @@ export default function AboutPage() {
                         contact me via email or on LinkedIn.
                     </p>
                 </div>
-                <div className="md:w-1/2 flex items-center justify-center md:justify-end">
+                <div className="w-full md:w-1/2 m-4 p-4 flex items-center justify-start md:justify-end">
                     <Image
                         src={profilePic}
                         alt="Will Hampshire"

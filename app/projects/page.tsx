@@ -4,17 +4,17 @@ import HyperLink from '../components/hyper';
 export default function ProjectsPage() {
     return (
         <div className="flex justify-center p-4">
-            <main className="w-full max-w-4xl bg-black bg-opacity-40 backdrop-blur-2xl p-6 rounded-lg shadow-lg">
-                <div className="rounded-3xl p-16">
+            <main className="w-full position-relative z-10 max-w-4xl bg-black bg-opacity-40 backdrop-blur-2xl p-6 rounded-lg shadow-lg">
+                <div className="rounded-3xl p-4 md:p-16">
                     <h1 className="text-5xl font-bold mb-6">Projects.</h1>
-                    <p className="mb-6 text-gray-300">Here are my personal and professional projects, where personal projects are
+                    <p className="mb-6 text-gray-300 text-sm md:text-lg">Here are my personal and professional projects, where personal projects are
                         available publicly.</p>
 
                     <ProjectUnit
                         title="LSTM based Machine Learning of Motor Activity for Prediction of Depression
                         without Clinical Diagnosis"
                         imageSrc="/neural_network_architecture.png"
-                        classNameImage={"image-project"}
+                        classNameImage={"image-project-sm md:image-project"}
                         description={
                             <>
                                 Trained a dual-branch multilayer neural network using LSTM RNN and Dense Layers using
@@ -36,7 +36,7 @@ export default function ProjectsPage() {
                     <ProjectUnit
                         title="This Website - Lightweight, Responsive Website Design using Modern Frameworks"
                         imageSrc="/ts.png"
-                        classNameImage={"image-project"}
+                        classNameImage={"image-project-sm md:image-project"}
                         description={
                             <>
                                 After realising my Wordpress site was very bloated and takes a long time to load basic
@@ -58,7 +58,7 @@ export default function ProjectsPage() {
                         title="WPF App (.NET) for Calculation of Radiance-Temperature Relationship for Digital
                         Radiometric Optical Devices"
                         imageSrc="/base-image-radtemp.png"
-                        classNameImage={"image-project"}
+                        classNameImage={"image-project-sm md:image-project"}
                         description={
                             <>
                                 Created a C# app using the WPF framework that calculates the Radiance Temperature
@@ -76,7 +76,7 @@ export default function ProjectsPage() {
                     <ProjectUnit
                         title="Sheffield 2024 Local Election – Data Scraping to Viz"
                         imageSrc="/sheffield_local_bubbles.png"
-                        classNameImage={"image-project"}
+                        classNameImage={"image-project-sm md:image-project"}
                         description={
                             <>
                                 After reading the 2024 Sheffield local election{' '}
@@ -101,7 +101,7 @@ export default function ProjectsPage() {
                     <ProjectUnit
                         title="Levant Region Land Ownership Over Time – Tableau Viz"
                         imageSrc="/levant.png"
-                        classNameImage={"image-project"}
+                        classNameImage={"image-project-sm md:image-project"}
                         description={
                             <>
                                 I thought it would be interesting to collate data from multiple maps, digitising to
@@ -118,7 +118,7 @@ export default function ProjectsPage() {
                     <ProjectUnit
                         title="Python Data Mining Scripts (professional)"
                         imageSrc="/python.png"
-                        classNameImage={"image-project"}
+                        classNameImage={"image-project-sm md:image-project"}
                         description={
                             <>
                                 Used to verify instrument quality in 7 figure orders, I coded 5 data mining scripts,

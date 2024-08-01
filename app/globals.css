@@ -4,6 +4,13 @@
 
 @import 'gradient.css';
 
+@media (max-width: 768px) {
+  .main-homepage {
+    margin-top: 6rem; /* Adjust this value for mobile */
+    /* Add other styles for mobile if needed */
+  }
+}
+
 .dmserif {
   @apply text-4xl font-bold;
   font-family: 'DM Serif Display', serif;
@@ -20,9 +27,12 @@ h3 {
 
 h1 {
   @apply dmserif;
-  @apply text-5xl font-bold mb-4;
+  @apply text-5xl font-bold;
 }
 
+.main-mobile {
+  padding-top: 60px;
+}
 
 :root {
   --foreground-rgb: 0, 0, 0;
@@ -70,14 +80,11 @@ header {
 }
 
 .image-project {
-  @apply rounded-lg;
-  background-color: white;
-  width: 16vw;
-  max-height: 16vw;
-  height: auto;
-  object-fit: cover; /* Crop the image to fill the container */
-  object-position: center; /* Center the image in the frame */
-  overflow: hidden; /* Hide any overflow content */
+  @apply rounded-lg bg-white object-cover object-center overflow-hidden;
+  width: 100%;
+  max-width: 16vw; /* Set the maximum width */
+  min-width: 170px;
+  height: auto; /* Adjust height automatically */
 }
 
 .hyper {
@@ -99,3 +106,4 @@ header {
 .noscroll {
   overflow: hidden;
 }
+
