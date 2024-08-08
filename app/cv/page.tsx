@@ -20,16 +20,6 @@ export default function CVPage() {
         link.click();
     };
 
-    useEffect(() => {
-        // Add the 'noscroll' class to the body
-        document.body.classList.add('noscroll');
-
-        // Cleanup function to remove the 'noscroll' class when the component is unmounted
-        return () => {
-            document.body.classList.remove('noscroll');
-        };
-    }, []);
-
     return (
         <div className="flex justify-center p-4">
             <main className="w-full max-w-4xl bg-black bg-opacity-40 backdrop-blur-2xl p-6 rounded-lg shadow-lg">

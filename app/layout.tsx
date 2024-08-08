@@ -32,14 +32,17 @@ export default function RootLayout({
         <div className="relative min-h-screen">
             <div className="background-container -z-40">
                 <div className="gradient"></div>
+                <div className="mobile-gradient"></div>
             </div>
-            <header className="flex items-center z-40 p-4 bg-opacity-50 backdrop-blur-md shadow-md relative">
+            <header className="flex items-center z-40 p-4 bg-opacity-50 backdrop-blur-md drop-shadow-2xl relative">
                 <Link href="/" passHref>
                     <h1 className={`text-3xl cursor-pointer items-center justify-center text-white`}>W.H.</h1>
                 </Link>
                 <nav className="flex items-center z-40">
                     <div className="md:hidden position-relative z-40 flex items-center">
-                        <ul className={`flex-col z-40 absolute top-16 left-0 right-0 bg-opacity-40 backdrop-blur-lg p-4 ${isMenuOpen ? 'flex' : 'hidden'} md:flex md:flex-row md:static md:bg-transparent md:backdrop-blur md:space-y-0 md:space-x-6 text-lg`}>
+                        <ul className={`flex-col z-40 absolute top-16 left-0 right-0 bg-opacity-40 backdrop-blur-sm 
+                        p-4 ${isMenuOpen ? 'flex' : 'hidden'} md:flex md:flex-row md:static md:bg-transparent 
+                        md:backdrop-blur md:space-y-0 md:space-x-6 text-lg border-y b-2 border-white border-opacity-50`}>
                             <li><Link href="/" className="navbar-text text-white" onClick={closeMenu}>Home</Link></li>
                             <li><Link href="/about" className="navbar-text text-white" onClick={closeMenu}>About</Link></li>
                             <li><Link href="/projects" className="navbar-text text-white" onClick={closeMenu}>Projects</Link></li>
@@ -48,7 +51,7 @@ export default function RootLayout({
                         </ul>
                     <button
                         onClick={toggleMenu}
-                        className="text-white hover:text-gray-400 focus:outline-none focus:text-gray-400"
+                        className="text-white hover:text-gray-300 focus:outline-none focus:text-gray-400"
                     >
                         {isMenuOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
                         </button>
@@ -62,7 +65,7 @@ export default function RootLayout({
                     </ul>
                 </nav>
             </header>
-            <main>{children}</main>
+            {children}
         </div>
         </body>
         </html>

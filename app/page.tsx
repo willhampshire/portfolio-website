@@ -39,9 +39,9 @@ export default function HomePage() {
         <main className="homepage">
             <div className="flex my-auto flex-col md:flex-row items-center md:items-center justify-between w-full max-w-4xl">
                 <div className="text-left mr-auto md:mr-8 md:w-2/3 ml-4 my-8">
-                    <p className="text-md md:text-lg mb-2">{"Hi, I'm"}</p>
+                    <p className="text-md md:text-lg mb-4 md:mb-2">{"Hi, I'm"}</p>
                     <h2 className="text-4xl md:text-5xl mb-4">William Hampshire.</h2>
-                    <p className="text-md md:text-xl mb-12">Physicist. Specialised in data science & coding.</p>
+                    <p className="text-md md:text-xl mb-4 md:mb-12">Physicist. Specialised in data science & coding.</p>
 
                     <Link href="/projects" passHref>
                         <button

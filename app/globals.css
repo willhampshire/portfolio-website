@@ -12,8 +12,21 @@
 }
 
 .dmserif {
-  @apply text-4xl font-bold;
+  @apply text-4xl font-bold text-white;
   font-family: 'DM Serif Display', serif;
+}
+
+html, body {
+  overflow: auto;
+}
+
+header {
+  @apply flex justify-between items-center p-4 bg-opacity-50 backdrop-blur-md z-40 shadow-md relative
+}
+
+h1 {
+  @apply dmserif;
+  @apply text-white text-5xl font-bold;
 }
 
 h2 {
@@ -22,13 +35,23 @@ h2 {
 }
 
 h3 {
-  @apply text-4xl font-bold mb-2;
+  @apply text-white text-4xl font-bold mb-2;
 }
 
-h1 {
-  @apply dmserif;
-  @apply text-5xl font-bold;
+p {
+  @apply text-white
 }
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+          to bottom,
+          transparent,
+          rgb(var(--background-end-rgb))
+  )
+  rgb(var(--background-start-rgb));
+}
+
 
 .main-mobile {
   padding-top: 60px;
@@ -48,25 +71,10 @@ h1 {
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
-
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
-}
-
-
-header {
-  @apply flex justify-between items-center p-4 bg-opacity-50 backdrop-blur-md
 }
 
 .homepage {
@@ -76,7 +84,7 @@ header {
 }
 
 .navbar-text {
-  @apply hover:text-gray-500 transition-colors duration-200 ease-in-out;
+  @apply hover:text-gray-500 transition-colors duration-200 ease-in-out mb-4;
 }
 
 .image-project {

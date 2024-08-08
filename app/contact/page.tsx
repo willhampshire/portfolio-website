@@ -5,15 +5,6 @@ import HyperLink from '../components/hyper';
 import {useEffect} from "react";
 
 export default function ContactPage() {
-    useEffect(() => {
-        // Add the 'noscroll' class to the body
-        document.body.classList.add('noscroll');
-
-        // Cleanup function to remove the 'noscroll' class when the component is unmounted
-        return () => {
-            document.body.classList.remove('noscroll');
-        };
-    }, []);
 
 
     return (

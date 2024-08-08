@@ -6,7 +6,7 @@ export default function ProjectsPage() {
         <div className="flex justify-center p-4">
             <main className="w-full position-relative z-10 max-w-4xl bg-black bg-opacity-40 backdrop-blur-2xl p-6 rounded-lg shadow-lg">
                 <div className="rounded-3xl p-4 md:p-16">
-                    <h1 className="text-5xl font-bold mb-6">Projects.</h1>
+                    <h1 className="text-4xl md:text-5xl font-bold mb-6">Projects.</h1>
                     <p className="mb-6 text-gray-300 text-sm md:text-lg">Here are my personal and professional projects, where personal projects are
                         available publicly.</p>
 
