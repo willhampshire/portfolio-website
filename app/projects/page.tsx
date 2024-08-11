@@ -34,6 +34,27 @@ export default function ProjectsPage() {
                     />
 
                     <ProjectUnit
+                        title="Exploratory Data Analysis of Go-Karting Times"
+                        imageSrc="/median_catplot.png"
+                        classNameImage={"image-project-sm md:image-project"}
+                        description={
+                            <>
+                                TeamSport send an email after each heat/session containing the lap times of your session.
+                                This provided an opportunity to use what I have learned so far in the Data Science track
+                                on DataCamp. I asked my family what they would like to find out,
+                                 and implemented data engineering, EDA, and visualisation leveraging
+                                powerful features of{' '}
+                                <span className="inline-code">pandas</span>{' '}and{' '}<span className="inline-code">seaborn</span>
+                                {' '} to answer their questions.
+                                More details on{' '}
+                                <HyperLink href={"https://github.com/willhampshire/karting"}
+                                           external={true} text={"GitHub"}/>
+                                .
+                            </>
+                        }
+                    />
+
+                    <ProjectUnit
                         title="This Website - Lightweight, Responsive Website Design using Modern Frameworks"
                         imageSrc="/ts.png"
                         classNameImage={"image-project-sm md:image-project"}
