@@ -8,7 +8,6 @@ import Button from './components/button';
 import { FaBars, FaTimes } from 'react-icons/fa';
 
 const inter = Inter({ subsets: ["latin"] });
-const dmserif = DM_Serif_Display({ subsets: ["latin"], weight: "400" });
 
 export default function RootLayout({
                                        children,
@@ -34,15 +33,16 @@ export default function RootLayout({
                 <div className="gradient"></div>
                 <div className="mobile-gradient"></div>
             </div>
-            <header className="flex items-center z-40 p-4 bg-opacity-50 backdrop-blur-md drop-shadow-2xl relative">
+            <header className="flex items-center z-40 p-4 bg-opacity-50 drop-shadow-2xl relative">
                 <Link href="/" passHref>
                     <h1 className={`text-3xl cursor-pointer items-center justify-center text-white`}>W.H.</h1>
                 </Link>
                 <nav className="flex items-center z-40">
                     <div className="md:hidden position-relative z-40 flex items-center">
-                        <ul className={`flex-col z-40 absolute top-16 left-0 right-0 bg-opacity-40 backdrop-blur-sm 
+                        <ul className={`flex-col z-40 absolute top-16 left-0 right-0 bg-opacity-40 
+                        backdrop-blur-sm transparent-black
                         p-4 ${isMenuOpen ? 'flex' : 'hidden'} md:flex md:flex-row md:static md:bg-transparent 
-                        md:backdrop-blur md:space-y-0 md:space-x-6 text-lg border-y b-2 border-white border-opacity-50`}>
+                        md:space-y-0 md:space-x-6 text-lg border-y b-2 border-white border-opacity-50`}>
                             <li><Link href="/" className="navbar-text text-white" onClick={closeMenu}>Home</Link></li>
                             <li><Link href="/about" className="navbar-text text-white" onClick={closeMenu}>About</Link></li>
                             <li><Link href="/projects" className="navbar-text text-white" onClick={closeMenu}>Projects</Link></li>
