@@ -1,13 +1,11 @@
 "use client";
 
 import { useState } from 'react';
-import { Inter, DM_Serif_Display } from "next/font/google";
+// import { Inter, DM_Serif_Display } from "next/font/google";
 import "./globals.css";
 import Link from 'next/link';
 import Button from './components/button';
 import { FaBars, FaTimes } from 'react-icons/fa';
-
-const inter = Inter({ subsets: ["latin"] });
 
 export default function RootLayout({
                                        children,
@@ -27,7 +25,7 @@ export default function RootLayout({
 
     return (
         <html lang="en">
-        <body className={inter.className}>
+        <body>
         <div className="relative min-h-screen">
             <div className="background-container -z-40">
                 <div className="gradient"></div>
