@@ -21,8 +21,8 @@ export default function ProjectsPage() {
                                 {' '}<span className="inline-code">tensorflow</span>{' '}and{' '}
                                 <span className="inline-code">scikit-learn</span>{' '}
                                 to predict MADRS depression score, using activity from an
-                                Actigraph watch. With 30% test split, 99.8% (R<sup>2</sup>) of variance in the results is
-                                explained by the model, where MADRS prediction RMAE = 0.24% (mean error %).
+                                Actigraph watch. With 30% test split, __% (R<sup>2</sup>) of variance in the results is
+                                explained by the model, where MADRS prediction RMAE = __% (mean error %). RESULTS PENDING.
                                 More details on{' '}
                                 <HyperLink href={"https://github.com/willhampshire/Depresjon_ML"}
                                            external={true} text={"GitHub"}/>
@@ -39,13 +39,14 @@ export default function ProjectsPage() {
                         classNameImage={"image-project-sm md:image-project"}
                         description={
                             <>
-                                TeamSport send an email after each heat/session containing the lap times of your session.
+                                TeamSport Karting send an email after each heat/session containing the lap times of your session.
                                 This provided an opportunity to use what I have learned so far in the Data Science track
-                                on DataCamp. I asked my family what they would like to find out,
+                                on DataCamp in an area I am interested in. I asked my family what they would like to find out,
                                  and implemented data engineering, EDA, and visualisation leveraging
                                 powerful features of{' '}
                                 <span className="inline-code">pandas</span>{' '}and{' '}<span className="inline-code">seaborn</span>
-                                {' '} to answer their questions.
+                                {' '} to answer their questions, wrangling and processing the data to provide effective
+                                visualisations.
                                 More details on{' '}
                                 <HyperLink href={"https://github.com/willhampshire/karting"}
                                            external={true} text={"GitHub"}/>
@@ -65,9 +66,10 @@ export default function ProjectsPage() {
                                 <span className="inline-code">Next.js</span>,{' '}
                                 <span className="inline-code">Tailwind CSS</span>{' '}and{' '}
                                 <span className="inline-code">Headless UI</span>.
-                                Using CSS to implement a moving gradient background is one of the customisations that
-                                building from scratch allows, as well as the internal page navigation system using
-                                react not requiring page refresh.
+                                Using CSS to implement a subtle moving gradient background is one of the customisations that
+                                building from scratch allows, as well as{' '}
+                                <span className="inline-code">React.js</span>{' '}
+                                based page navigation system. Overall, an enjoyable project to extend web development experience.
                                 More details on{' '}
                                 <HyperLink href={"https://github.com/willhampshire/portfolio-website"}
                                            external={true} text={"GitHub"}/>.
@@ -119,6 +121,22 @@ export default function ProjectsPage() {
                         }
                     />
 
+
+                    <ProjectUnit
+                        title="Python Data Mining Scripts (professional)"
+                        imageSrc="/python.png"
+                        classNameImage={"image-project-sm md:image-project"}
+                        description={
+                            <>
+                                Used to verify instrument quality in 7 figure orders, I coded 5 data mining scripts,
+                                using numpy, pandas, and more, for my company. Enhanced quality control using
+                                statistical methods, able to identify anomalies efficiently and determine effective &
+                                reasonable pass/fail thresholds. Over 30,000 records, formatted as .html, .pdf and
+                                .txt, scraped in total.
+                            </>
+                        }
+                    />
+
                     <ProjectUnit
                         title="Levant Region Land Ownership Over Time – Tableau Viz"
                         imageSrc="/levant.png"
@@ -137,16 +155,15 @@ export default function ProjectsPage() {
                     />
 
                     <ProjectUnit
-                        title="Python Data Mining Scripts (professional)"
-                        imageSrc="/python.png"
+                        title="Rest API website client (professional)"
+                        imageSrc="/js.png"
                         classNameImage={"image-project-sm md:image-project"}
                         description={
                             <>
-                                Used to verify instrument quality in 7 figure orders, I coded 5 data mining scripts,
-                                using numpy, pandas, and more, for my company. Enhanced quality control using
-                                statistical methods, able to identify anomalies efficiently and determine effective &
-                                reasonable pass/fail thresholds. Over 30,000 records, formatted as .html, .pdf and
-                                .txt, scraped in total.
+                                Created an example website using HTML, CSS and – mostly – JavaScript, showing the 
+                                capabilities of connecting to instruments using Rest API. This includes displaying a 
+                                live image via http GET requests, PUT requests, sending queries for specific regions (ROIs) 
+                                retrieving minimum, maximum and average values within, and more.
                             </>
                         }
                     />
