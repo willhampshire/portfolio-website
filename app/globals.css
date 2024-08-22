@@ -109,7 +109,7 @@ body {
 }
 
 .p-about {
-  @apply mb-6
+  @apply mb-6 2xl:text-lg lg:text-sm
 }
 
 .noscroll {
