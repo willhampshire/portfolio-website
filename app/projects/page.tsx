@@ -56,20 +56,21 @@ export default function ProjectsPage() {
                     />
 
                     <ProjectUnit
-                        title="This Website - Lightweight, Responsive Website Design using Modern Frameworks"
-                        imageSrc="/ts.png"
+                        title="This Website - Responsive Design using Modern Frameworks"
+                        imageSrc="/next.png"
                         classNameImage={"image-project-sm md:image-project"}
                         description={
                             <>
-                                After realising my Wordpress site was very bloated and takes a long time to load basic
-                                pages, I created my own, using{' '}
+                                After noticing my Wordpress site was very bloated and slow, I created my own, using{' '}
                                 <span className="inline-code">Next.js</span>,{' '}
                                 <span className="inline-code">Tailwind CSS</span>{' '}and{' '}
-                                <span className="inline-code">Headless UI</span>.
+                                <span className="inline-code">Headless UI</span>, using{' '}
+                                <span className="inline-code">.tsx</span>{' '}
+                                to return HTML rather than DOM based interactions.
                                 Using CSS to implement a subtle moving gradient background is one of the customisations that
                                 building from scratch allows, as well as{' '}
                                 <span className="inline-code">React.js</span>{' '}
-                                based page navigation system. Overall, an enjoyable project to extend web development experience.
+                                fast page navigation. Overall, an enjoyable project to extend web development experience.
                                 More details on{' '}
                                 <HyperLink href={"https://github.com/willhampshire/portfolio-website"}
                                            external={true} text={"GitHub"}/>.
@@ -78,7 +79,7 @@ export default function ProjectsPage() {
                     />
 
                     <ProjectUnit
-                        title="WPF App (.NET) for Calculation of Radiance-Temperature Relationship for Digital
+                        title="WPF App (.NET 8) for Calculation of Radiance-Temperature Relationship for Digital
                         Radiometric Optical Devices"
                         imageSrc="/base-image-radtemp.png"
                         classNameImage={"image-project-sm md:image-project"}
@@ -161,9 +162,10 @@ export default function ProjectsPage() {
                         description={
                             <>
                                 Created an example website using HTML, CSS and – mostly – JavaScript, showing the 
-                                capabilities of connecting to instruments using Rest API. This includes displaying a 
+                                capabilities of connecting to instruments using Rest API. This includes displaying a
                                 live image via http GET requests, PUT requests, sending queries for specific regions (ROIs) 
-                                retrieving minimum, maximum and average values within, and more.
+                                retrieving minimum, maximum and average values within, and more. This work supports the
+                                move towards IoT systems of devices.
                             </>
                         }
                     />
