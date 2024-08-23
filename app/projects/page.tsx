@@ -10,6 +10,7 @@ export default function ProjectsPage() {
                     <p className="mb-6 text-gray-300 text-sm md:text-lg">Here are my personal and professional projects, where personal projects are
                         available publicly.</p>
 
+                    /*
                     <ProjectUnit
                         title="LSTM based Machine Learning of Motor Activity for Prediction of Depression
                         without Clinical Diagnosis"
@@ -32,6 +33,7 @@ export default function ProjectsPage() {
                             </>
                         }
                     />
+                    */
 
                     <ProjectUnit
                         title="Exploratory Data Analysis of Go-Karting Times"
