@@ -2,9 +2,7 @@
 
 ## Introduction
 After realising my wordpress based site was very bloated and unavailable for custom changes, I decided to make my own
-from scratch using modern frameworks. This project contains all the project code.
-I will eventually push to [williamhampshire.com](https://www.williamhampshire.com) when my wordpress expires 
-(also a reminder to myself).
+from scratch using modern frameworks. This project contains all the project code. Currently hosted on [my website](https://williamhampshire.com).
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
