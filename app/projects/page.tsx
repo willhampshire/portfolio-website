@@ -10,7 +10,6 @@ export default function ProjectsPage() {
                     <p className="mb-6 text-gray-300 text-sm md:text-lg">Here are my personal and professional projects, where personal projects are
                         available publicly.</p>
 
-                    /*
                     <ProjectUnit
                         title="LSTM based Machine Learning of Motor Activity for Prediction of Depression
                         without Clinical Diagnosis"
@@ -32,7 +31,6 @@ export default function ProjectsPage() {
                             </>
                         }
                     />
-                    */
 
                     <ProjectUnit
                         title="Exploratory Data Analysis of Go-Karting Times"
@@ -68,10 +66,10 @@ export default function ProjectsPage() {
                                 <span className="inline-code">Headless UI</span>, using{' '}
                                 <span className="inline-code">.tsx</span>{' '}
                                 to return HTML rather than DOM based interactions.
-                                Using CSS to implement a subtle moving gradient background is one of the customisations that
-                                building from scratch allows, as well as{' '}
+                                Using{' '}
                                 <span className="inline-code">React.js</span>{' '}
-                                fast page navigation. Overall, an enjoyable project to extend web development experience.
+                                fast page navigation system couples with this well. Overall, an enjoyable project to
+                                extend web development experience.
                                 More details on{' '}
                                 <HyperLink href={"https://github.com/willhampshire/portfolio-website"}
                                            external={true} text={"GitHub"}/>.
