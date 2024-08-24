@@ -21,8 +21,7 @@ export default function ProjectsPage() {
                                 {' '}<span className="inline-code">tensorflow</span>{' '}and{' '}
                                 <span className="inline-code">scikit-learn</span>{' '}
                                 to predict MADRS depression score, using activity from an
-                                Actigraph watch. With 30% test split, __% (R<sup>2</sup>) of variance in the results is
-                                explained by the model, where MADRS prediction RMAE = __% (mean error %). RESULTS PENDING.
+                                Actigraph watch. With 30% test split, MADRS prediction MAE {'<'} 1%.
                                 More details on{' '}
                                 <HyperLink href={"https://github.com/willhampshire/Depresjon_ML"}
                                            external={true} text={"GitHub"}/>
