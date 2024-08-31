@@ -3,11 +3,10 @@
 import { useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import Head from 'next/head';
 
 export default function HomePage() {
     const profilePic = '/profile.png';
-
-
 
     useEffect(() => {
         // Function to handle adding/removing 'noscroll' class
@@ -36,6 +35,11 @@ export default function HomePage() {
     }, []);
 
     return (
+        <>
+        <Head>
+            <link rel="preload" href={profilePic} as="image" type="image/png" />
+        </Head>
+
         <main className="homepage">
             <div className="flex my-auto flex-col md:flex-row items-center md:items-center justify-between w-full max-w-4xl">
                 <div className="text-left mr-auto md:mr-8 md:w-2/3 ml-4 my-8">
@@ -63,5 +67,6 @@ export default function HomePage() {
                 </div>
             </div>
         </main>
+        </>
     );
 }
