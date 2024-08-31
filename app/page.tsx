@@ -41,7 +41,7 @@ export default function HomePage() {
                 <div className="text-left mr-auto md:mr-8 md:w-2/3 ml-4 my-8">
                     <p className="text-md md:text-lg mb-4 md:mb-2">{"Hi, I'm"}</p>
                     <h2 className="text-4xl md:text-5xl mb-4">William Hampshire.</h2>
-                    <p className="text-md md:text-xl mb-4 md:mb-12">Physicist. Specialised in data science.</p>
+                    <p className="text-md md:text-xl mb-8 md:mb-12">Physicist. Specialised in data science.</p>
 
                     <Link href="/projects" passHref>
                         <button
