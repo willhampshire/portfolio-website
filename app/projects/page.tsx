@@ -21,13 +21,37 @@ export default function ProjectsPage() {
                                 {' '}<span className="inline-code">tensorflow</span>{' '}and{' '}
                                 <span className="inline-code">scikit-learn</span>{' '}
                                 to predict MADRS depression score, using activity from an
-                                Actigraph watch. With 30% test split, MADRS prediction MAE {'<'} 1%.
+                                Actigraph watch. With 30% test split, MADRS score prediction MAE {'<'} 1%, and the
+                                prediction for change in score was also {'<'} 1% (percentage based on input data range rather than
+                                possible metric values). Interestingly, demographic data seems to be a stronger predictor than the
+                                LSTM network, so I plan to investigate if only LSTM can be used as this would ultimately be
+                                more useful. Given the amount of smart devices around, there is excellent potential for scalability.
                                 More details on{' '}
                                 <HyperLink href={"https://github.com/willhampshire/Depresjon_ML"}
                                            external={true} text={"GitHub"}/>
                                 .{' '}‘Depresjon’ dataset from{' '}
                                 <HyperLink href={"https://datasets.simula.no/depresjon/"}
                                            external={true} text={"Simula"}/>.
+                            </>
+                        }
+                    />
+
+                    <ProjectUnit
+                        title="Stock Price Prediction ML Pipeline featuring FastAPI and Streamlit dashboard"
+                        imageSrc="/fastapi.png"
+                        classNameImage={"image-project-sm md:image-project"}
+                        description={
+                            <>
+                                This project allowed me to practice making a local machine learning (LSTM) pipeline,
+                                using FastAPI for Rested data access, and Streamlit for an interactive dashboard.
+                                Docker setup is also introduced, however Docker is now unsupported on my device so is untested.
+                                This would make cloud hosting possible, as well as the ability to run on nearly any device.
+                                During the project, I learned a lot about Rested backend design,
+                                limitations of LSTM models (e.g. poor volatility prediction causing R^2 of 0), network structure, and the use case for making a
+                                container to run the app.
+                                More details on{' '}
+                                <HyperLink href={"https://github.com/willhampshire/stock_prediction"}
+                                           external={true} text={"GitHub"}/>.
                             </>
                         }
                     />
@@ -61,15 +85,15 @@ export default function ProjectsPage() {
                         description={
                             <>
                                 After noticing my Wordpress site was very bloated and slow, I created my own, using{' '}
-                                <span className="inline-code">Next.js</span>,{' '}
+                                <span className="inline-code">Next.js</span>{' (React based), '}
                                 <span className="inline-code">Tailwind CSS</span>{' '}and{' '}
-                                <span className="inline-code">Headless UI</span>, using{' '}
+                                <span className="inline-code">Headless UI</span>. I chose to use TypeScript{' '}
                                 <span className="inline-code">.tsx</span>{' '}
-                                to return HTML rather than DOM based interactions.
-                                Using{' '}
+                                files to return HTML blocks, rather than using default DOM based interaction.
+                                Using a{' '}
                                 <span className="inline-code">React.js</span>{' '}
-                                fast page navigation system couples with this well. Overall, an enjoyable project to
-                                extend web development experience.
+                                based framework means the page navigation system couples with this well.
+                                Overall, an enjoyable project to extend web development experience.
                                 More details on{' '}
                                 <HyperLink href={"https://github.com/willhampshire/portfolio-website"}
                                            external={true} text={"GitHub"}/>.
@@ -132,7 +156,8 @@ export default function ProjectsPage() {
                                 using numpy, pandas, and more, for my company. Enhanced quality control using
                                 statistical methods, able to identify anomalies efficiently and determine effective &
                                 reasonable pass/fail thresholds. Over 30,000 records, formatted as .html, .pdf and
-                                .txt, scraped in total.
+                                .txt, scraped in total. I expect this to improve product quality significantly as witnessed
+                                for the foreseeable future, increasing the business{"\'"} products reputation.
                             </>
                         }
                     />
@@ -145,7 +170,8 @@ export default function ProjectsPage() {
                             <>
                                 I thought it would be interesting to collate data from multiple maps, digitising to
                                 shapefiles using QGIS, to show ownership of the land in the Levant region
-                                (specifically modern day Israel/Palestine area) in coarse steps from 1000BC. This{' '}
+                                (specifically modern day Israel/Palestine area) in coarse steps from 1000BC (there were
+                                many empires that ruled in between the largest gap). This{' '}
                                 <HyperLink href={"https://public.tableau.com/app/profile/william.hampshire/viz/Levant/BriefhistoryofIsraelintheLevantregion"}
                                            external={true} text={"Tableau dashboard"}/>{' '}
                                 allows the user to investigate the land ownership over time,
@@ -160,11 +186,12 @@ export default function ProjectsPage() {
                         classNameImage={"image-project-sm md:image-project"}
                         description={
                             <>
-                                Created an example website using HTML, CSS and – mostly – JavaScript, showing the 
+                                Created an example website to demonstrate and for clients to build upon using HTML, CSS and – mostly – JavaScript, showing the
                                 capabilities of connecting to instruments using Rest API. This includes displaying a
                                 live image via http GET requests, PUT requests, sending queries for specific regions (ROIs) 
                                 retrieving minimum, maximum and average values within, and more. This work supports the
-                                move towards IoT systems of devices.
+                                move towards IoT systems of devices, and allowing many-to-many connectivity very easily,
+                                meaning many different devices can be used with one system on multiple clients.
                             </>
                         }
                     />
