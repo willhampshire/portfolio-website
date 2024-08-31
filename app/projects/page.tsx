@@ -45,7 +45,7 @@ export default function ProjectsPage() {
                                 This project allowed me to practice making a local machine learning (LSTM) pipeline,
                                 using FastAPI for Rested data access, and Streamlit for an interactive dashboard.
                                 Docker setup is also introduced, however Docker is now unsupported on my device so is untested.
-                                This would make cloud hosting possible, as well as the ability to run on nearly any device.
+                                This would make cloud hosting possible, and is better for running on different devices.
                                 During the project, I learned a lot about Rested backend design,
                                 limitations of LSTM models (e.g. poor volatility prediction causing R^2 of 0), network structure, and the use case for making a
                                 container to run the app.
