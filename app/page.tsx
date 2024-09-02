@@ -9,6 +9,7 @@ export default function HomePage() {
     const profilePic = '/profile.png';
 
     useEffect(() => {
+        document.title = "Will Hampshire";
         // Function to handle adding/removing 'noscroll' class
         const handleResize = () => {
             // Check if screen width is less than 768px (mobile)
@@ -36,12 +37,7 @@ export default function HomePage() {
 
     return (
         <>
-        <Head>
-            <link rel="preload" href={profilePic} as="image" type="image/png" />
-            <title>Will Hampshire</title>
-        </Head>
-
-        <main className="homepage">
+            <main className="homepage">
             <div className="flex my-auto flex-col md:flex-row items-center md:items-center justify-between w-full max-w-4xl">
                 <div className="text-left mr-auto md:mr-8 md:w-2/3 ml-4 my-8">
                     <p className="text-md md:text-lg mb-4 md:mb-2">{"Hi, I'm"}</p>
