@@ -38,6 +38,7 @@ export default function HomePage() {
         <>
         <Head>
             <link rel="preload" href={profilePic} as="image" type="image/png" />
+            <title>Will Hampshire</title>
         </Head>
 
         <main className="homepage">
