@@ -9,6 +9,8 @@ export default function ExcelToCsvConverter() {
     // Update state to store an array of objects, each with 'name' and 'csv'
     const [csvData, setCsvData] = useState<{ name: string, csv: string }[] | null>(null);
     const [fileName, setFileName] = useState<string>("");
+    const [sheetIndex, setSheetIndex] = useState<number>(0); // State to track the selected sheet index
+    const [inputSheetIndex, setInputSheetIndex] = useState<string>("1"); // To handle user input as string initially
 
     const handleFileUpload = (event: React.ChangeEvent<HTMLInputElement>) => {
         const file = event.target.files?.[0];
@@ -56,6 +58,16 @@ export default function ExcelToCsvConverter() {
         });
     };
 
+    const handleSheetInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+        const inputValue = event.target.value;
+        setInputSheetIndex(inputValue);
+
+        const sheetNumber = parseInt(inputValue, 10);
+        if (!isNaN(sheetNumber) && csvData && sheetNumber >= 1 && sheetNumber <= csvData.length) {
+            setSheetIndex(sheetNumber - 1); // Set zero-based index for preview
+        }
+    };
+
     return (
         <div className="flex justify-center p-4">
             <main className="w-full max-w-4xl bg-black bg-opacity-40 backdrop-blur-2xl p-6 rounded-lg shadow-lg">
@@ -63,7 +75,7 @@ export default function ExcelToCsvConverter() {
                     <h1 className="text-4xl md:text-5xl font-bold mb-6">Excel to CSV</h1>
 
                     <p className="mb-6 text-gray-300">Upload Excel file (.xlsx or .xls) to convert to CSV.
-                        Download zip of all sheets.</p>
+                        Download zip of all sheets (regardless of preview).</p>
 
                     {/* Upload Button */}
                     <input
@@ -83,16 +95,36 @@ export default function ExcelToCsvConverter() {
                         Download zip
                     </button>
 
-                    {/* CSV Preview */}
                     {csvData && (
-                        <div className="text-white mt-4">
-                            <p>Preview of first sheet:</p>
-                            <textarea
-                                className="w-full h-48 bg-gray-800 text-white p-2 rounded-lg"
-                                value={csvData[0].csv} // Show preview of the first sheet only
-                                readOnly
-                            ></textarea>
-                        </div>
+                        <>
+                            {/* Sheet Selector */}
+                            <div className="text-white mt-4">
+                                <label htmlFor="sheet-number" className="block mb-2">
+                                    Sheet:
+                                </label>
+                                <input
+                                    id="sheet-number"
+                                    type="number"
+                                    min="1"
+                                    max={csvData.length}
+                                    value={inputSheetIndex}
+                                    onChange={handleSheetInputChange}
+                                    className="p-2 text-black rounded-md"
+                                />
+                            </div>
+
+                            {/* CSV Preview */}
+                            {csvData[sheetIndex] && (
+                                <div className="text-white mt-4">
+                                    <p className='mb-2'>Preview sheet {sheetIndex + 1}:</p>
+                                    <textarea
+                                        className="w-full h-48 bg-gray-800 text-white p-2 rounded-lg"
+                                        value={csvData[sheetIndex].csv} // Show preview of the selected sheet
+                                        readOnly
+                                    ></textarea>
+                                </div>
+                            )}
+                        </>
                     )}
                 </div>
             </main>
