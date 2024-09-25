@@ -1,4 +1,5 @@
 # Personal portfolio website
+### (hobby)
 
 ## Introduction
 After realising my wordpress based site was very bloated and unavailable for custom changes, I decided to make my own

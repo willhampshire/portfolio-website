@@ -13,7 +13,7 @@ export default function ProjectsPage() {
                     <ProjectUnit
                         title="LSTM based Machine Learning of Motor Activity for Prediction of Depression
                         without Clinical Diagnosis"
-                        imageSrc="/neural_network_architecture.png"
+                        imageSrc="/neural_network_architecture_2_wspace.png"
                         classNameImage={"image-project-sm md:image-project"}
                         description={
                             <>
