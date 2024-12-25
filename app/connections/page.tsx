@@ -64,16 +64,19 @@ export default function ConnectionsPage() {
 
                 const wordsArray = responseJSON.words
                 const seen = new Set<string>();
-                const duplicates = [];
+                const duplicates: string[] = [];
 
                 wordsArray.forEach((item: string) => {
                     if (seen.has(item)) {
                         duplicates.push(item);
-                        setMessage("Duplicates found - please regenerate")
                     } else {
                         seen.add(item);
                     }
                 });
+
+                if (duplicates) {
+                    console.log("Duplicate - please regenerate")
+                }
 
                 const newData: GameData = {
                     words: responseJSON.words,
