@@ -11,19 +11,19 @@ export default function ProjectsPage() {
                         available publicly.</p>
 
                     <ProjectUnit
-                        title="Discovery of Photonic Band Inversion using 1D Lattice Aperiodicity"
+                        title="Discovery of Photonic Band Inversion Method"
                         imageSrc="/dispersion_relation.png"
                         classNameImage={"image-project-sm md:image-project"}
                         description={
                             <>
-                                During my final year project researching dependence of photonic bands formed in a
-                                1D lattice waveguide, I discovered a novel method of photonic band inversion of
-                                bound states in the continuum (BICs) and quasi-BICs that is much more simply constructed
+                                During my final year project, researching dependence of photonic bands in a
+                                waveguide on geometric lattice parameters,
+                                I discovered a novel method of photonic band inversion that is much more simply constructed
                                 than existing methods with lithography techniques. Python RCWA simulations
                                 investigating oblique light incidence allowed identification of photonic band inversion in
                                 an aperiodic waveguide, with intriguing properties. Strong Python ability, photonics
                                 intuition and research skills enabled me to advance photonics research in this way,
-                                opening the door for tunable topological edge states in miniaturised devices.
+                                opening the door for highly tunable topological edge states in miniaturised devices.
                             </>
                         }
                     />
