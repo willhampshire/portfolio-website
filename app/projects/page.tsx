@@ -17,13 +17,55 @@ export default function ProjectsPage() {
                         description={
                             <>
                                 During my final year project, researching dependence of photonic bands in a
-                                waveguide on geometric lattice parameters,
-                                I discovered a novel method of photonic band inversion that is much more simply constructed
-                                than existing methods with lithography techniques. Python RCWA simulations
+                                waveguide on geometric grating parameters,
+                                I discovered a novel method of photonic band inversion that is more easily constructed
+                                than existing methods, with existing lithography techniques. Python RCWA simulations
                                 investigating oblique light incidence allowed identification of photonic band inversion in
-                                an aperiodic waveguide, with intriguing properties. Strong Python ability, photonics
-                                intuition and research skills enabled me to advance photonics research in this way,
-                                opening the door for highly tunable topological edge states in miniaturised devices.
+                                aperiodic waveguides, with intriguing properties. Strong Python ability, photonics
+                                intuition and research skills enabled me to advance photonics research,
+                                opening the door for highly tunable topological edge states in miniaturised photonic devices.
+                            </>
+                        }
+                    />
+
+                    <ProjectUnit
+                        title="WPF App (.NET 8) for Calculation of Radiance-Temperature Relationship for Digital
+                        Radiometric Optical Devices"
+                        imageSrc="/base-image-radtemp.png"
+                        classNameImage={"image-project-sm md:image-project"}
+                        description={
+                            <>
+                                Created a C# app using the WPF framework that calculates the Radiance Temperature
+                                relationship for a given wavelength band, temperature range, and filter using the
+                                Sakuma Hattori Planck 3 approximation to calculate thermal radiation.
+                                SQLite database management module created to
+                                manage filters, which can be stacked to simulate a non-transparent beam path.
+                                Resulting relationship downloadable as CSV. More details on{' '}
+                                <HyperLink href={"https://github.com/willhampshire/WPFapp_radiance_temperature"}
+                                           external={true} text={"GitHub"}/>.
+                            </>
+                        }
+                    />
+
+                    <ProjectUnit
+                        title="This Website - Responsive Design using Modern Frameworks"
+                        imageSrc="/next.png"
+                        classNameImage={"image-project-sm md:image-project"}
+                        description={
+                            <>
+                                After noticing my Wordpress site was very bloated and slow, I created my own, using{' '}
+                                <span className="inline-code">Next.js</span>{' (React based), '}
+                                <span className="inline-code">Tailwind CSS</span>{' '}and{' '}
+                                <span className="inline-code">Headless UI</span>. I chose to use TypeScript{' '}
+                                <span className="inline-code">.tsx</span>{' '}
+                                files to return HTML blocks, rather than using default DOM based interaction.
+                                Using a{' '}
+                                <span className="inline-code">React.js</span>{' '}
+                                based framework means the page navigation system couples with this well.
+                                Overall, an enjoyable project to extend web development experience.
+                                More details on{' '}
+                                <HyperLink href={"https://github.com/willhampshire/portfolio-website"}
+                                           external={true} text={"GitHub"}/>.
                             </>
                         }
                     />
@@ -92,48 +134,6 @@ export default function ProjectsPage() {
                                 <HyperLink href={"https://github.com/willhampshire/karting"}
                                            external={true} text={"GitHub"}/>
                                 .
-                            </>
-                        }
-                    />
-
-                    <ProjectUnit
-                        title="This Website - Responsive Design using Modern Frameworks"
-                        imageSrc="/next.png"
-                        classNameImage={"image-project-sm md:image-project"}
-                        description={
-                            <>
-                                After noticing my Wordpress site was very bloated and slow, I created my own, using{' '}
-                                <span className="inline-code">Next.js</span>{' (React based), '}
-                                <span className="inline-code">Tailwind CSS</span>{' '}and{' '}
-                                <span className="inline-code">Headless UI</span>. I chose to use TypeScript{' '}
-                                <span className="inline-code">.tsx</span>{' '}
-                                files to return HTML blocks, rather than using default DOM based interaction.
-                                Using a{' '}
-                                <span className="inline-code">React.js</span>{' '}
-                                based framework means the page navigation system couples with this well.
-                                Overall, an enjoyable project to extend web development experience.
-                                More details on{' '}
-                                <HyperLink href={"https://github.com/willhampshire/portfolio-website"}
-                                           external={true} text={"GitHub"}/>.
-                            </>
-                        }
-                    />
-
-                    <ProjectUnit
-                        title="WPF App (.NET 8) for Calculation of Radiance-Temperature Relationship for Digital
-                        Radiometric Optical Devices"
-                        imageSrc="/base-image-radtemp.png"
-                        classNameImage={"image-project-sm md:image-project"}
-                        description={
-                            <>
-                                Created a C# app using the WPF framework that calculates the Radiance Temperature
-                                relationship for a given wavelength band, temperature range, and filter using the
-                                Sakuma Hattori Planck 3 approximation to calculate thermal radiation.
-                                SQLite database management module created to
-                                manage filters, which can be stacked to simulate a non-transparent beam path.
-                                Resulting relationship downloadable as CSV. More details on{' '}
-                                <HyperLink href={"https://github.com/willhampshire/WPFapp_radiance_temperature"}
-                                           external={true} text={"GitHub"}/>.
                             </>
                         }
                     />
