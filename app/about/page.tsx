@@ -54,11 +54,12 @@ export default function AboutPage() {
                     </p>
 
                     <p className="p-about text-sm md:text-md">
-                        Along with Physics, I have always had a hand in electronics and programming. My
-                        skills reflect this, and over time has lead me towards Data Science and Analytics. During my
-                        placement year, I experienced how influential data skills can be, where I was able to make an
+                        Along with Physics, I have always had a hand in Electronics and Programming. My
+                        skills reflect this, and over time has lead me towards both Data Science and Photonics. During my
+                        placement year, I experienced how influential data skills can be in photonics related industry,
+                        where I was able to make an
                         immediate and significant impact to multiple aspects of design and quality,
-                        using Physics and Data literacy.
+                        using Physics and Data Science.
                     </p>
 
                     <p className="p-about text-sm md:text-md">
