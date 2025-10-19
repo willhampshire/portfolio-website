@@ -45,7 +45,7 @@ export default function RootLayout({
                             <li><Link href="/about" className="navbar-text text-white" onClick={closeMenu}>About</Link></li>
                             <li><Link href="/projects" className="navbar-text text-white" onClick={closeMenu}>Projects</Link></li>
                             <li><Link href="/contact" className="navbar-text text-white" onClick={closeMenu}>Contact</Link></li>
-                            <li><Link href="/cv" className="navbar-text text-white" onClick={closeMenu}>CV</Link></li>
+                            {/* <li><Link href="/cv" className="navbar-text text-white" onClick={closeMenu}>CV</Link></li> */}
                         </ul>
                     <button
                         onClick={toggleMenu}
@@ -59,7 +59,7 @@ export default function RootLayout({
                         <li><Link href="/about" className="navbar-text text-white">About</Link></li>
                         <li><Link href="/projects" className="navbar-text text-white">Projects</Link></li>
                         <li><Link href="/contact" className="navbar-text text-white">Contact</Link></li>
-                        <li><Button text="CV" href="/cv"/></li>
+                        {/* <li><Button text="CV" href="/cv"/></li> */}
                     </ul>
                 </nav>
             </header>

@@ -43,23 +43,21 @@ export default function AboutPage() {
                         About me.
                     </h1>
                     <p className="p-about text-sm md:text-md">
-                        Despite having an interest in all things Science and Engineering when I was younger, I chose to
-                        pursue
+                        Despite having an interest in all things Science and Engineering when I was younger, I chose to pursue
                         Physics, a decision driven by passion for wanting to know how things work, as well as the broad
                         range of disciplines encompassed.
                     </p>
 
                     <p className="p-about text-sm md:text-md">
-                        Fascinated by my subject, I now study BSc Physics at the University of Sheffield.
+                        Fascinated by my subject, I now study MSc Optics and Photonics at Imperial College, after graduating from 
+                        the University of Sheffield with 1st class honours, and additionally completing two industrial placements. 
                     </p>
 
                     <p className="p-about text-sm md:text-md">
-                        Along with Physics, I have always had a hand in Electronics and Programming. My
-                        skills reflect this, and over time has lead me towards both Data Science and Photonics. During my
-                        placement year, I experienced how influential data skills can be in photonics related industry,
-                        where I was able to make an
-                        immediate and significant impact to multiple aspects of design and quality,
-                        using Physics and Data Science.
+                        As well as Physics, I have always liked Electronics and Programming. My
+                        skills reflect this, and over time has guided me towards both Software and Photonics. During my
+                        placement year, I experienced how influential data skills can be,
+                        where I was able to make an immediate and significant impact to multiple aspects of design and quality.
                     </p>
 
                     <p className="p-about text-sm md:text-md">
@@ -67,8 +65,12 @@ export default function AboutPage() {
                     </p>
 
                     <p className="p-about text-sm md:text-md">
-                        Thanks for taking an interest – I look forward to any future opportunities. Please feel free
-                        contact me via email or on LinkedIn.
+                        I am currently searching for PhD research opportunities, preferably 2D materials and/or topological photonics applications.
+                    </p>
+
+                    <p className="p-about text-sm md:text-md">
+                        Thanks for taking an interest. Please feel free
+                        contact me for CV & references, via email or on LinkedIn.
                     </p>
                 </div>
                 <div className="w-full md:w-1/2 m-4 p-4 flex items-center justify-start md:justify-end">
