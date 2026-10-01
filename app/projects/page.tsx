@@ -16,12 +16,11 @@ export default function ProjectsPage() {
                         classNameImage={"image-project-sm md:image-project"}
                         description={
                             <>
-                                During my final year project, researching dependence of photonic bands in a
-                                waveguide on geometric grating parameters,
-                                I discovered a novel method of photonic band inversion that is more easily constructed
-                                than existing methods, with existing lithography techniques. Python RCWA simulations
+                                During my BSc project, researching photonic bands of a grating and the effect of geometric parameters,
+                                I discovered a novel method of photonic band inversion that is, in principle, more easily manufactured
+                                than existing methods using lithography. Python RCWA simulations
                                 investigating oblique light incidence allowed identification of photonic band inversion in
-                                aperiodic waveguides, with intriguing properties. Strong Python ability, photonics
+                                aperiodically-patterned gratings, with intriguing properties. Strong Python ability, photonics
                                 intuition and research skills enabled me to advance photonics research,
                                 opening the door for highly tunable topological edge states in miniaturised photonic devices.
                             </>
@@ -180,7 +179,7 @@ export default function ProjectsPage() {
                         }
                     />
 
-                    <ProjectUnit
+                    {/* <ProjectUnit
                         title="Levant Region Land Ownership Over Time – Tableau Viz"
                         imageSrc="/levant.png"
                         classNameImage={"image-project-sm md:image-project"}
@@ -196,7 +195,7 @@ export default function ProjectsPage() {
                                 and speculate on complex and nuanced factors contributing to ongoing modern conflicts.
                             </>
                         }
-                    />
+                    /> */}
 
                     <ProjectUnit
                         title="Rest API website client (professional)"
