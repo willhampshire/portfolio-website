@@ -65,12 +65,14 @@ export default function AboutPage() {
                     </p>
 
                     <p className="p-about text-sm md:text-md">
-                        I am currently searching for PhD research opportunities, preferably 2D materials and/or topological photonics applications.
+                        {/* I am currently searching for PhD research opportunities, preferably 2D materials and/or topological photonics applications. */}
+                        I am currently searching for both photonics engineer roles 
+                        and PhD research opportunities, particularly 2D materials and topological photonics for quantum technologies. 
                     </p>
 
                     <p className="p-about text-sm md:text-md">
-                        Thanks for taking an interest. Please feel free
-                        contact me for CV & references, via email or on LinkedIn.
+                        Thank you for taking an interest. Please feel free
+                        contact me for CV & references, via email or LinkedIn. 
                     </p>
                 </div>
                 <div className="w-full md:w-1/2 m-4 p-4 flex items-center justify-start md:justify-end">
